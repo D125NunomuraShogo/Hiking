@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハイキングの思い出サイト</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            margin: 90px auto 90px auto;
+            max-width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FF00C8;
+            font-size: 100px;
+            font-family: monospace;
+            letter-spacing: 10px;
+            margin: 20px auto 20px auto;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+        }
+
+        body {
+            background-color: #E5FF72;
+        }
+
+        .styled {
+            display: block;
+            margin: 10px auto;
+            border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            font-size: 2rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: #0051FF;
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2) 30%,
+                    rgba(0, 0, 0, 0));
+            box-shadow:
+                inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+                inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        .styled:hover {
+            background-color: #FF7373;
+        }
+
+        .styled:active {
+            box-shadow:
+                inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+                inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        .breadcrumb {
+            .styled {
+                display: inline-block;
+                margin: 10px auto;
+                border: 0;
+                line-height: 2.5;
+                padding: 0 20px;
+                font-size: 1rem;
+                text-align: center;
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
+                border-radius: 10px;
+                background-color: #FF7373;
+                background-image: linear-gradient(to top left,
+                        rgba(0, 0, 0, 0.2),
+                        rgba(0, 0, 0, 0.2) 30%,
+                        rgba(0, 0, 0, 0));
+                box-shadow:
+                    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+                    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+            }
+
+            .styled:hover {
+                background-color: #0051FF;
+            }
+
+            .styled:active {
+                box-shadow:
+                    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+                    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        /*モバイル対応*/
+        @media (max-width: 767px) {
+
+            main {
+                padding: 0 4%;
+            }
+
+            .contents1 {
+                padding: 287px 0;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            img {
+                max-width: 100%;
+                height: 500px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="breadcrumb">
+        <a href="index.html" style="text-decoration:none;"><button class="favorite styled"
+                type="button">TOP</button></a>
+        >
+        <a href="contents1.html" style="text-decoration:none;"><button class="favorite styled"
+                type="button">猿</button></a>
+        >
+        <button class="favorite styled" type="button">マレーバク</button>
+    </div>
+    <h1>マレーバク</h1>
+    <img src="contents2.webp" alt="コンテンツ2_マレーバク" width="800" height="600">
+    <a href="contents3.html" style="text-decoration:none;"><button class="favorite styled"
+            type="button">インドサイへ</button></a>
+</body>
+
+</html>
