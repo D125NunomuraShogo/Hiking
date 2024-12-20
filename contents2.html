@@ -109,7 +109,19 @@
            
 
         }
-        
+        @media screen and (orientation: portrait) {
+  .box {
+    width: 95vw;
+    height: calc(95vw / 0.75);
+  }
+}
+/* 横長の場合 */
+@media screen and (orientation: landscape) {
+  .box {
+    width: calc(95vh * 0.75);
+    height: 95vh;
+  }
+}
     </style>
 </head>
 
